@@ -15,7 +15,8 @@ const int ledPin = 13;      // Built-in LED for visual feedback
 
 // TIMING (Must match Flutter app)
 const int unit = 250;       // ms
-const int threshold = 500;  // LDR threshold (Value < 500 means Light Detected)
+const int threshold = 225;  // LDR threshold (Value < 225 means Light Detected)
+                            // Ranges: Normal (250-450), LED Flash (100-200)
 
 unsigned long pulseStart = 0;
 bool isLightOn = false;
